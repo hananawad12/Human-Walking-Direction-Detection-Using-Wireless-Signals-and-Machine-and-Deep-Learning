@@ -26,7 +26,7 @@ A sample CSI data file, stored in binary format as it emanates from the router, 
 
 Within the model directory, all the code pertaining to the Proprocessing and training of the Data.
 
-***1. Propressing:***
+***- Propressing:***
 
 *Amplitudes are affected by various types of outlier and noise, from limited bandwidth to transition rate and power adaptations, as well as thermal noise. Consequently, signal outliers arise that are not attributable to human actions. To address this problem, the Hampel filter algorithm is applied.
 
@@ -34,7 +34,7 @@ Within the model directory, all the code pertaining to the Proprocessing and tra
 
 *Finally, reconstructing the data.
 
-***2. training:***
+***- training:***
 
 * Various notebooks used to train the data, we evaluate the performance of our approach using a variety of machine and deep learning classifiers, including RF, KNN, SVM, and 1D-CNN.
 
