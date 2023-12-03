@@ -24,7 +24,7 @@
 
    This script is instrumental in visualizing the real-time CSI data.
 
-   The command would resemble: ./sendDatacontp wlan<i> <Mac_Address> <time_interval > <num_packets>. 
+   The command would resemble: ./sendDatacontp wlan <i> <Mac_Address> <time_interval > <num_packets>. 
 
    For example: ./sendDatacontp wlan0 64:70:02:CB:FC:27 50000 100
 
