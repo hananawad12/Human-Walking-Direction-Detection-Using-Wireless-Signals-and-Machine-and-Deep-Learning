@@ -5,7 +5,7 @@ We conducted extensive experiments in two indoor environments. Our system, using
 Our experiments consistently proved the robustness of our system in various scenarios. The accuracy remained stable even with an increasing number of volunteers and different training sizes, different individuals, environments, group sizes, and training data variations. Our approach demonstrates versatility in its applicability across various scenarios. It can be effectively employed to track the walking direction of customers in retail stores. Furthermore, in security systems, it proves valuable for monitoring human walking directions and detecting unauthorized access in restricted areas.
 
 ----------------------------------------------------------
-#Repository Structure:
+# Repository Structure:
 
 The repository is structured into five key directories, each serving a distinct purpose:
 
