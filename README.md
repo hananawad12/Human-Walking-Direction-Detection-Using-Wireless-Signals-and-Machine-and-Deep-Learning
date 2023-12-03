@@ -22,11 +22,7 @@ This program functions as a listener for the recvCSI program, facilitating the r
 Additionally, the directory includes a script named run_test_client.py designed for a dummy server, emulating incoming data from the router to aid in testing scenarios.
 A sample CSI data file, stored in binary format as it emanates from the router, is also provided under the path data/sample_csi_packet_big_endian.dat.
 
-***Preprocessing and Training:***
-
-Within the model directory, all the code pertaining to the Proprocessing and training of the Data.
-
-***- Propressing:***
+***Propressing:***
 
 *Amplitudes are affected by various types of outlier and noise, from limited bandwidth to transition rate and power adaptations, as well as thermal noise. Consequently, signal outliers arise that are not attributable to human actions. To address this problem, the Hampel filter algorithm is applied.
 
@@ -34,7 +30,7 @@ Within the model directory, all the code pertaining to the Proprocessing and tra
 
 *Finally, reconstructing the data.
 
-***- training:***
+***training:***
 
 * Various notebooks used to train the data, we evaluate the performance of our approach using a variety of machine and deep learning classifiers, including RF, KNN, SVM, and 1D-CNN.
 
