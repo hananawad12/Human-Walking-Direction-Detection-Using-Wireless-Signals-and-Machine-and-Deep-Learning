@@ -1,7 +1,9 @@
 ***CSI Data Retrieval, Visualization, and Storage Program***
+
 This application is designed to efficiently retrieve Channel State Information (CSI) data from a router, specifically from the recvCSI program running on the router. The primary functions of this program include real-time visualization of the CSI data and the option to store the collected information in the labtop.
 
 ***Sample Setup for Visualizing CSI***
+
 The experimental setup involves three devices: two wireless routers and one labtop.
 
 1. Access Point (AP) Configuration:
