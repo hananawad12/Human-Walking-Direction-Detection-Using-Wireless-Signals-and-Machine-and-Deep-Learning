@@ -2,5 +2,5 @@ Create the sendData tool by using `make`.
 
 Usage:
 
-* sendData: `./sendData <Interface Name> <HW Address> <Package count>`
-* sendData_con: `./sendData_con <Interface Name> <HWAddress> <Package interval in µs>`
+* sendData: `./sendData <Interface_Name> <Mac_Address> <num_of_packets>`
+* sendDatacontp: `./sendDatacontp <Interface_Name> <Mac_Address> <time_interval in µs> <num_of_packets>
