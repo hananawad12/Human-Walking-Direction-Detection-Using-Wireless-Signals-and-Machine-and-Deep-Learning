@@ -32,7 +32,7 @@ Within the model directory, all the code pertaining to the Proprocessing and tra
 
 *To extract the useful features of CSI amplitudes, we used DWT. The DWT algorithm can be used to decompose the CSI into multiple levels of wavelet coefficients, each representing different frequency bands in the signal. The high-frequency wavelet coefficients represent the noise and other high-frequency components of the signal, while the low-frequency coefficients represent the smoother components of the signal. By filtering out the high-frequency coefficients representing noise and high impulses and retaining the low-frequency coefficients, the denoised signal is obtained.  
 
-*Finally, constructing the activities.
+*Finally, reconstructing the data.
 
 ***2. training:***
 
