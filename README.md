@@ -36,7 +36,7 @@ Within the model directory, all the code pertaining to the Proprocessing and tra
 
 ***2. training:***
 
-* Various notebooks used to train the data by using, we evaluate the performance of our approach using a variety of machine and deep learning classifiers, including RF, KNN, SVM, and 1D-CNN.
+* Various notebooks used to train the data, we evaluate the performance of our approach using a variety of machine and deep learning classifiers, including RF, KNN, SVM, and 1D-CNN.
 
 ***Dataset:***
 
