@@ -1,0 +1,4 @@
+,RF_Accuracy,SVM_accuracy,KNN_accuracy
+Room Lab1,81.0%,92.9%,76.2%
+Room Lab2,81.0%,92.9%,76.2%
+Room Lab1 & Lab2,80.5%,89.0%,82.9%
