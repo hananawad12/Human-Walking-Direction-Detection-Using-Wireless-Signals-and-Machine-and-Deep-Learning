@@ -42,3 +42,10 @@ Within the model directory, all the code pertaining to the Proprocessing and tra
 
 The dataset is structured with a hierarchical organization, encompassing nine folders, each corresponding to a distinct user. Within each user folder, there exist two subfolders, namely "classroom" and "meeting room," signifying the source of the data collected from two distinct rooms.
 
+--------------------------------------------------------------------------------------
+# Dataset:
+
+The dataset can be downloaded by the following [Link](https://doi.org/10.6084/m9.figshare.24718371.v1)
+.
+
+
