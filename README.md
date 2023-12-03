@@ -22,7 +22,8 @@ This program functions as a listener for the recvCSI program, facilitating the r
 Additionally, the directory includes a script named run_test_client.py designed for a dummy server, emulating incoming data from the router to aid in testing scenarios.
 A sample CSI data file, stored in binary format as it emanates from the router, is also provided under the path data/sample_csi_packet_big_endian.dat.
 
-***Preprocessing and Training***
+***Preprocessing and Training:***
+
 Within the model directory, all the code pertaining to the Proprocessing and training of the Data.
 
 ***1. Propressing:***
