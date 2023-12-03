@@ -1,29 +1,33 @@
-# CSI data retrieval, visualization and storing
+***CSI Data Retrieval, Visualization, and Storage Program***
+This application is designed to efficiently retrieve Channel State Information (CSI) data from a router, specifically from the recvCSI program running on the router. The primary functions of this program include real-time visualization of the CSI data and the option to store the collected information in the labtop.
 
-This program is responsible for retrieving CSI data from the router (the one running `recvCSI` program), 
-visualizing it in a realtime and storing it in a filesystem.
+***Sample Setup for Visualizing CSI***
+The experimental setup involves three devices: two wireless routers and one labtop.
 
-***Sample Setup for visualize CSI*** 
+1. Access Point (AP) Configuration:
+The first wireless router, designated as A, operates as an Access Point (AP).
+The second wireless router, labeled B, and the labtop establish connections with this AP.
 
-The setup consists of three devices. Two SoC's and one PC/Notebook
+2. Initialization of recv_csi Tool on A:
+A initiates the recv_csi tool, accessible here (Routers/recvCSI), with the IP address of the labtop and port 1234.
+The command would resemble: ./recv_csi2 <labtop_IP> 1234.
 
-1. The first SoC (A) acts as an access point (AP). The other SoC (B) and the PC connect to that AP
+3. Visualization Setup:
+The labtop launches the run_visualization.py script from the provided folder.
+This script is instrumental in visualizing the real-time CSI data.
+The command would resemble: ./sendDatacontp wlan<i> <Mac_Address> <time_interval > <num_packets>. 
+For example: ./sendDatacontp wlan0 64:70:02:CB:FC:27 50000 100
+**It will send 100 packets time interval between them 0.05 second
 
-2. A starts the recv_csi tool from [HERE](https://github.com/Retsediv/WIFI_CSI_based_HAR/tree/master/router/recvCSI)
-   with the IP Address of the PC and the port 1234 `./recv_csi <PC IP> 1234`
+4. Data Transmission from B:
+B launches the send_data tool, available here (Routers/sendData).
+Packages sent by B should now be received and processed by the labtop.
 
-3. The PC starts the `run_visualization_server.py` script from this folder
-
-4. B starts the send_data tool from [HERE](https://github.com/Retsediv/WIFI_CSI_based_HAR/tree/master/router/sendData)
-   and starts sending packages. Those packages should now be received by the PC
-
-5. As the result you should see a plot of the CSI packet like in the picture below.
-
-<div align="center"><img src="images/screenshot.png" alt="CSI packet" width="400" height="auto"/></div>
+***Troubleshooting:***
+If the labtop fails to receive packages, firewall issues should be investigated.
+Confirm the correct UDP port configuration in the recvCSI program arguments.
+Ensure the presence of the 'pyqt' library, a prerequisite for the visualization script.
 
 
-*Troubleshooting*:
 
-- If the packages are not received by the PC there might be issues with the firewall
-- Also check if you set the correct UDP port in `recvCSI` program arguments
-- Check if you have installed `pyqt`.
+
