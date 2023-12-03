@@ -30,7 +30,7 @@ A sample CSI data file, stored in binary format as it emanates from the router, 
 
 *Finally, reconstructing the data.
 
-***training:***
+***Training:***
 
 * Various notebooks used to train the data, we evaluate the performance of our approach using a variety of machine and deep learning classifiers, including RF, KNN, SVM, and 1D-CNN.
 
