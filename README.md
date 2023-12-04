@@ -1,8 +1,8 @@
 # Human-Walking-Direction-Detection-Using-Wireless-Signals-and-Machine-and-Deep-Learning
-we introduced a device-free method that can precisely identify the direction of human walk using CSI of Wi-Fi signals, machine, and deep learning algorithms. Raw CSI signals are first calibrated and effectively denoised using Hampel filter and DWT algorithms.
+We introduced a device-free method that can precisely identify the direction of human walking using CSI of Wi-Fi signals, machine learning, and deep learning algorithms. Raw CSI signals are first calibrated and effectively denoised using the Hampel filter and DWT algorithms.
 We conducted extensive experiments in two indoor environments. Our system, using SVM and CSI amplitudes, achieved recognition accuracy of 92.9\%, 95.1\%, and 89\% in the classroom, meeting room, and both rooms, respectively. Additionally, our system, employing 1D-CNN and CSI amplitudes, demonstrated recognition accuracy rates of 88.1\%, 100\%, and 84.2\% in the classroom, meeting room, and both rooms, respectively.  
 
-Our experiments consistently proved the robustness of our system in various scenarios. The accuracy remained stable even with an increasing number of volunteers and different training sizes, different individuals, environments, group sizes, and training data variations. Our approach demonstrates versatility in its applicability across various scenarios. It can be effectively employed to track the walking direction of customers in retail stores. Furthermore, in security systems, it proves valuable for monitoring human walking directions and detecting unauthorized access in restricted areas.
+Our experiments consistently proved the robustness of our system in various scenarios. The accuracy remained stable even with an increasing number of volunteers and different training sizes, individuals, environments, group sizes, and training data variations. Our approach demonstrates versatility in its applicability across various scenarios. It can be effectively employed to track the walking directions of customers in retail stores. Furthermore, in security systems, it proves valuable for monitoring human walking directions and detecting unauthorized access in restricted areas.
 
 ----------------------------------------------------------
 # Repository Structure:
@@ -24,15 +24,15 @@ A sample CSI data file, stored in binary format as it emanates from the router, 
 
 ***Propressing:***
 
-*Amplitudes are affected by various types of outlier and noise, from limited bandwidth to transition rate and power adaptations, as well as thermal noise. Consequently, signal outliers arise that are not attributable to human actions. To address this problem, the Hampel filter algorithm is applied.
+*Amplitudes are affected by various types of outliers and noise, from limited bandwidth to transition rate and power adaptations, as well as thermal noise. Consequently, signal outliers arise that are not attributable to human actions. To address this problem, the Hampel filter algorithm is applied.
 
-*To extract the useful features of CSI amplitudes, we used DWT. The DWT algorithm can be used to decompose the CSI into multiple levels of wavelet coefficients, each representing different frequency bands in the signal. The high-frequency wavelet coefficients represent the noise and other high-frequency components of the signal, while the low-frequency coefficients represent the smoother components of the signal. By filtering out the high-frequency coefficients representing noise and high impulses and retaining the low-frequency coefficients, the denoised signal is obtained.  
+*To extract the useful features of CSI amplitudes, we used DWT. The DWT algorithm can be used to decompose the CSI into multiple levels of wavelet coefficients, each representing different frequency bands in the signal. The high-frequency wavelet coefficients represent the noise and other high-frequency components of the signal, while the low-frequency coefficients represent the smoother components of the signal. By filtering out the high-frequency coefficients representing noise and high impulses and retaining the low-frequency coefficients, the denoised signal is obtained.
 
 *Finally, reconstructing the data.
 
 ***Training:***
 
-* Various notebooks used to train the data, we evaluate the performance of our approach using a variety of machine and deep learning classifiers, including RF, KNN, SVM, and 1D-CNN.
+* Several Jupyter notebook files are used to train the data. We evaluate the performance of our approach using a variety of machine and deep learning classifiers, including RF, KNN, SVM, and 1D-CNN.
 
 ***Dataset:***
 
