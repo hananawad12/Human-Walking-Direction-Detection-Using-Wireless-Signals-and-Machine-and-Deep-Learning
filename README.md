@@ -24,9 +24,9 @@ A sample CSI data file, stored in binary format as it emanates from the router, 
 
 ***Propressing:***
 
-*Amplitudes are affected by various types of outliers and noise, from limited bandwidth to transition rate and power adaptations, as well as thermal noise. Consequently, signal outliers arise that are not attributable to human actions. To address this problem, the Hampel filter algorithm is applied.
+* Amplitudes are affected by various types of outliers and noise, from limited bandwidth to transition rate and power adaptations, as well as thermal noise. Consequently, signal outliers arise that are not attributable to human actions. To address this problem, the Hampel filter algorithm is applied.
 
-*To extract the useful features of CSI amplitudes, we used DWT. The DWT algorithm can be used to decompose the CSI into multiple levels of wavelet coefficients, each representing different frequency bands in the signal. The high-frequency wavelet coefficients represent the noise and other high-frequency components of the signal, while the low-frequency coefficients represent the smoother components of the signal. By filtering out the high-frequency coefficients representing noise and high impulses and retaining the low-frequency coefficients, the denoised signal is obtained.
+* To extract the useful features of CSI amplitudes, we used DWT. The DWT algorithm can be used to decompose the CSI into multiple levels of wavelet coefficients, each representing different frequency bands in the signal. The high-frequency wavelet coefficients represent the noise and other high-frequency components of the signal, while the low-frequency coefficients represent the smoother components of the signal. By filtering out the high-frequency coefficients representing noise and high impulses and retaining the low-frequency coefficients, the denoised signal is obtained.
 
 *Finally, reconstructing the data.
 
@@ -42,5 +42,18 @@ The dataset is structured with a hierarchical organization, encompassing nine fo
 # Dataset:
 
 The dataset can be downloaded by the following [Link](https://doi.org/10.6084/m9.figshare.24718371.v3).
+
+---------------------------------------------------------------------------------------
+
+# Authors:
+* Hanan Awad Hassan Ali - Innopolis University former master student
+* Shinnazar Seytnazarov - Supervisor
+  
+---------------------------------------------------------------------------------------
+
+# Paper:
+The Paper can be downloaded by the following [Link](https://doi.org/10.3390/s23249726).
+
+
 
 
